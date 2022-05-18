@@ -1,3 +1,18 @@
+// This file is part of NMFV_WILSONS.
+//
+// NMFV_WILSONS is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// NMFV_WILSONS is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with NMFV_WILSONS. If not, see <https://www.gnu.org/licenses/>.
+
 #include <quadmath.h>
 #include "clooptools.h"
 #include "marty/looptools_init.h"
@@ -18,7 +33,7 @@ complex_t C9Z_C(
 {
     clearcache();
     const real_t M_W = param.M_W;
-    const real_t m_Z = param.m_Z;
+    const real_t M_Z = param.M_Z;
     const real_t m_b = param.m_b;
     const real_t m_c = param.m_c;
     const real_t m_s = param.m_s;
@@ -95,7 +110,7 @@ complex_t C9Z_C(
     const complex_t IT_0002 = cpowq(conjq(V_ts), -1);
     const complex_t IT_0003 = powq(e_em, -4);
     const complex_t IT_0004 = 9.86960440108936*IT_0000*IT_0001*IT_0002*IT_0003;
-    const complex_t IT_0005 = powq(m_Z, 2);
+    const complex_t IT_0005 = powq(M_Z, 2);
     const complex_t IT_0006 = powq(m_mu, 2);
     const complex_t IT_0007 = cpowq((-2)*s_34 + IT_0005 + (-2)*IT_0006 + 
       -reg_prop, -1);

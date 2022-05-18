@@ -1,3 +1,18 @@
+// This file is part of NMFV_WILSONS.
+//
+// NMFV_WILSONS is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// NMFV_WILSONS is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with NMFV_WILSONS. If not, see <https://www.gnu.org/licenses/>.
+
 #include "global.h"
 #include "libdiagonalization.h"
 #include "c9_nmfv.h"
@@ -348,7 +363,7 @@ SpectrumOutput updateDiagonalization(SpectrumInput const &inputs)
 
 void updateMassExpressions(param_t &params)
 {
-    params.m_Z = crealq(m_Z(params));
+    params.M_Z = crealq(m_Z(params));
     params.m_sG = crealq(m_sG(params));
     params.m_N_1 = crealq(m_N_1(params));
     params.m_N_2 = crealq(m_N_2(params));
