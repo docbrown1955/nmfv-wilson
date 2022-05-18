@@ -19,7 +19,7 @@ complex_t C9Z_G(
     clearcache();
     const real_t M_W = param.M_W;
     const real_t g_s = param.g_s;
-    const real_t m_Z = param.m_Z;
+    const real_t M_Z = param.M_Z;
     const real_t m_b = param.m_b;
     const real_t m_s = param.m_s;
     const real_t V_tb = param.V_tb;
@@ -1310,7 +1310,7 @@ complex_t C9Z_G(
        IT_1032 + IT_1035 + IT_1036 + IT_1039 + IT_1040 + IT_1043 + IT_1044 + 
       -IT_1047 + -IT_1048 + -IT_1051 + -IT_1052 + -IT_1055 + -IT_1056 + -IT_1059
        + -IT_1060 + -IT_1063 + -IT_1064 + -IT_1065;
-    const complex_t IT_1067 = powq(m_Z, 2);
+    const complex_t IT_1067 = powq(M_Z, 2);
     const complex_t IT_1068 = powq(m_mu, 2);
     const complex_t IT_1069 = cpowq((-2)*s_34 + IT_1067 + (-2)*IT_1068 + 
       -reg_prop, -1);

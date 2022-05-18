@@ -18,7 +18,7 @@ complex_t C10Z_H(
 {
     clearcache();
     const real_t M_W = param.M_W;
-    const real_t m_Z = param.m_Z;
+    const real_t M_Z = param.M_Z;
     const real_t m_b = param.m_b;
     const real_t m_c = param.m_c;
     const real_t m_s = param.m_s;
@@ -44,7 +44,7 @@ complex_t C10Z_H(
     const complex_t IT_0002 = cpowq(conjq(V_ts), -1);
     const complex_t IT_0003 = powq(e_em, -4);
     const complex_t IT_0004 = 9.86960440108936*IT_0000*IT_0001*IT_0002*IT_0003;
-    const complex_t IT_0005 = powq(m_Z, 2);
+    const complex_t IT_0005 = powq(M_Z, 2);
     const complex_t IT_0006 = powq(m_mu, 2);
     const complex_t IT_0007 = cpowq((-2)*s_34 + IT_0005 + (-2)*IT_0006 + 
       -reg_prop, -1);

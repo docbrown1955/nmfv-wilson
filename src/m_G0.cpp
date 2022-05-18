@@ -17,7 +17,7 @@ complex_t m_G0(
         )
 {
     clearcache();
-    const real_t m_Z = param.m_Z;
-    return m_Z;
+    const real_t M_Z = param.M_Z;
+    return M_Z;
 }
 } // End of namespace c9_nmfv

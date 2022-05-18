@@ -348,7 +348,7 @@ SpectrumOutput updateDiagonalization(SpectrumInput const &inputs)
 
 void updateMassExpressions(param_t &params)
 {
-    params.m_Z = crealq(m_Z(params));
+    params.M_Z = crealq(m_Z(params));
     params.m_sG = crealq(m_sG(params));
     params.m_N_1 = crealq(m_N_1(params));
     params.m_N_2 = crealq(m_N_2(params));
